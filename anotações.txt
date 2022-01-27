@@ -1,0 +1,5 @@
+npm install vue-cli@2.7.0 -g // Instalano o cli do vue
+
+vue init webpack-simple alurapic //webpack-simple é o template que será usado no projeto,  que vem depois é o nome do projeto
+
+npm run dev // exibe a página principal do projeto no navegador
