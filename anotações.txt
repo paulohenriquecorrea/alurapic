@@ -29,3 +29,17 @@ ul>li*2>// Cria uma ul com duas li
 // O vue-resource (módulo para realizar requisições assíncronas) precisa ser importado no arquivo main.js e registrado no mesmo arquivo
    import VueResource from 'vue-resource';
    Vue.use(VueResource); (é assim que registra)
+   o vue-resource fornece o método this.$http.get()
+
+
+ // Para o vscode reconhecer esse tipo de comando (emmet):  div.painel>h2.painel-titulo+div.painel-conteudo
+ abrir o arquivo settings.json ( em \vscode\data\user-data\User)
+ add o seguinte código:
+    "emmet.triggerExpansionOnTab": true, "emmet.syntaxProfiles": { 
+  "vue-html": "html", 
+  "vue": "html" 
+  }, 
+  "emmet.includeLanguages": { 
+  "vue-html": "html", 
+  "vue": "html" 
+  },
