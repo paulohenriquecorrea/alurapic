@@ -1,3 +1,4 @@
+// INSTALAR VUE
 npm install vue-cli@2.7.0 -g // Instalando o cli do vue
 
 vue init webpack-simple alurapic //webpack-simple é o template que será usado no projeto,  que vem depois é o nome do projeto
@@ -8,3 +9,23 @@ npm run dev // exibe a página principal do projeto no navegador
 
 ul>li*2>// Cria uma ul com duas li
 
+// o arquivo /dist/build.js é criado em tempo de execução na memória baseado nos arquivos da pasta src
+// o arquivo app.vue é um single file template (é também um módulo)
+
+//main.js é um dos primeiros arquivos a ser carregado. É nele onde eu informo onde os módulos serão renderizados
+
+// a função data fornece as informações que o template precisa. Ela sempre retorna um objeto JS
+
+// Quando há mais de um elemento na tag tamplate, eles precisam estar dentro de um tag div
+
+// Dentro de atributos não se pode usar interpolação {{}}. Usa-se o v-bind:nomeDoAtributo (v-bind é uma diretiva, ensina novos truques ao navegador)
+   também é possível usar apenas :nomeDoAtributo (é tipo um atalho)
+
+// Para rodar API executar o comando npm start
+
+// Instalar vue-resource
+      npm install vue-resource@1.0.3 --save (o --save registra o vue-resource no packge.json para indicar que ele é uma dependência do projeto)
+
+// O vue-resource (módulo para realizar requisições assíncronas) precisa ser importado no arquivo main.js e registrado no mesmo arquivo
+   import VueResource from 'vue-resource';
+   Vue.use(VueResource); (é assim que registra)

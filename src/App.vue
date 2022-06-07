@@ -4,6 +4,7 @@
 
     <ul>
       <li v-for="foto of fotos">
+        <!-- ou <li v-for="foto in fotos" -->
         <img v-bind:src="foto.url" :alt="foto.titulo" />
       </li>
     </ul>
