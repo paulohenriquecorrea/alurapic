@@ -43,3 +43,20 @@ ul>li*2>// Cria uma ul com duas li
   "vue-html": "html", 
   "vue": "html" 
   },
+
+
+  // Para usar um componente:
+   // No componente
+      export default {
+         props: ["nomeDaProp", nomeOutraProp]
+      }; (O que for passado para props pode ser usado com interpolação ou bind)
+
+   // No arquivo onde o componente é usado
+      import NomeComponente from "caminho do componente"; (logo após a tag script)
+      components: {
+         'nomeQueEuQueroChamar': NomeComponente
+      } (dentro de export default)
+
+   // Para inserir elementos dentro do componente importado
+      vou no arquivo do componente e troco <div class="nomeClasse"></div> por <slot class="nomeClasse"></slot>
+      o slot possibilita dizer qual parte do componente vai receber o conteúdo que tiver entre a aberta e fechamento do componente no arquivo que ele é chamado
