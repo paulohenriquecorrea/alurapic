@@ -63,3 +63,7 @@ ul>li*2>// Cria uma ul com duas li
 
    // Aplicar estilo apenas ao próprio elementos
       adicionar scoped a tag style do elemente (Ex.? <style scoped>)
+
+   // input de pesquisa
+   adicionar a  diretiva v-on:input="nomeDaPropriedade = $event.target.value"
+   onde: $event é um objeto especial do Vue que trabalha com eventos
