@@ -1,7 +1,6 @@
 <template>
   <div class="corpo">
     <h1 class="centralizado">{{ titulo }}</h1>
-
     <ul class="lista-fotos">
       <li class="lista-fotos-item" v-for="foto of fotos">
         <!-- ou <li v-for="foto in fotos" -->

@@ -60,3 +60,6 @@ ul>li*2>// Cria uma ul com duas li
    // Para inserir elementos dentro do componente importado
       vou no arquivo do componente e troco <div class="nomeClasse"></div> por <slot class="nomeClasse"></slot>
       o slot possibilita dizer qual parte do componente vai receber o conteúdo que tiver entre a aberta e fechamento do componente no arquivo que ele é chamado
+
+   // Aplicar estilo apenas ao próprio elementos
+      adicionar scoped a tag style do elemente (Ex.? <style scoped>)
